@@ -28,22 +28,22 @@
         // apuntes importantes
         Son una serie de caracteres especiales que nos permiten realizar búsquedas muy avanzadas utilizando ls .
         Puedes utilizar wildcards con otros comandos que realicen manipulación de archivos como mv, cp o rm . También
-        se conocen como comodines.
+        se conocen como comodines.--
         ls *<texto>: Nos muestra todos los archivos que tengan en su nombre dicho texto al final. Si haces ls <texto>*
-                lo busca al final. El asterisco significa cualquier string.
+                lo busca al final. El asterisco significa cualquier string.--
                 ls <text>? El signo de interrogación sustituye a cualquier carácter, por ejemplo, buscamos todos los
                     archivos que tengan una palabra y un número dado de caracteres después. El signo de interrogación
-                    significa cualquier carácter.
+                    significa cualquier carácter.--
                     ls [[:upper:]]* Para filtrar cosas que inicien que una mayúscula; esto busca también dentro de los
-                    directorios.
-                    ls [[:lower:]]* Lo mismo pero con minúsculas.
-                    ls -d Se muestran solo directorios.
-                    ls [ad]* Todo lo que inicie con a o con b
+                    directorios.--
+                    ls [[:lower:]]* Lo mismo pero con minúsculas.--
+                    ls -d Se muestran solo directorios.--
+                    ls [ad]* Todo lo que inicie con a o con b--
     </p>
     <h2>clase #8</h2>
     <p>nos dan inicio diciendo que nos van a explicar como funciona  la shell, nos muestran un diagrama explicando como funcina la shell, nos muestra con /ls pictures los archivos en estan el pictures
         y si quieres buscar un archivo en /Pictures entomces escribes /ls pictures > "nombre del archivo" y si es que el archivo no existe entonce se creara, y con /ls descargas >> "nombre el archivo anterior "junta 
-        todos los archivos de las dos carpertas y con el comando /less "nombre el archivo" buscamos el archivo y la ubicacion 
+        todos los archivos de las dos carpertas y con el comando /less "nombre el archivo" buscamos el archivo y la ubicacion --
     </p>
     <h2>clase #9</h2>
     <p>ahora vamos seguir con pipe operator, con /echo "hola platzi" ejecuta esp en la consola, con /cat "nombre el archivo 1" "nombre de archivo 2" concatenamos los dos para mostrar la informacion de
@@ -72,17 +72,31 @@
         ahora podemos buscar archivos con nombre en el caso seria /find ./"decimos que estamos en el home" -name "aca el nombre"
     </p>
     <h2>clase #15</h2>
-    <p> # dpkg --get-selections te dirá todos tus paquetes instalados
-        # grep filtrará esa lista con el paquete que te interesa
-        grep -i the movies.csv : Lo que busca este comando es cualquier línea que contenga la palabra "the", asi sea mayúscula o minúscula.
-        grep -ci the movies.csv : Lo que hace este comando es encontrar el numero de veces que aparece la palabra "the" dentro del archivo, así sea mayúscula o minúscula.
-        grep -vi towers movies.csv > sintowers.txt : Lo que hace este comando es buscar todas las lineas que no tienen la palabra towers, y el output ponerlo en un archivo de texto llamado "sintowers".
-        wc: Cuenta la cantidad de palabras de un archivo.
+    <p> # dpkg --get-selections te dirá todos tus paquetes instalados--
+        # grep filtrará esa lista con el paquete que te interesa--
+        grep -i the movies.csv : Lo que busca este comando es cualquier línea que contenga la palabra "the", asi sea mayúscula o minúscula.--
+        grep -ci the movies.csv : Lo que hace este comando es encontrar el numero de veces que aparece la palabra "the" dentro del archivo, así sea mayúscula o minúscula.--
+        grep -vi towers movies.csv > sintowers.txt : Lo que hace este comando es buscar todas las lineas que no tienen la palabra towers, y el output ponerlo en un archivo de texto llamado "sintowers".--
+        wc: Cuenta la cantidad de palabras de un archivo.--
         wc -l: Cuenta la cantidad de lineas de un archivo.</p>
     <h2>clase #16</h2>
-    <p></p>
+    <p> ifconfig // sirve para ver la mascara de red, puerto de transmisión, tarjeta de red, etc--
+
+         ping // nos muestra si una ip o pagina, esta activa, si salen paquetes es porque hay conexión.--
+        
+         curl pagina_web// podemos traer el html de una pagina, podríamos guardarlo con el estándar output.--
+        
+         wget pagina_web // nos descarga el archivo html, pero con formato.--
+        
+         traceroute pagina_web // nos sirve para ver por cuales computadoras tenemos que ir pasando para llegar por ejemplo a una pagina web. Ejemplo, nos saldrán las ip que tenemos que pasar para llegar a la pagina que queremos.--
+        
+         netstat -i // nos muestra los dispositivos de red--.</p>
     <h2>clase #17</h2>
-    <p></p>
+    <p>tar -cvf toCompress.tar toCompress: Con este comando lo que hacemos es comprimir un archivo, primero debemos decir el nombre del archivo final y luego la carpeta u archivo que deseamos comprimir.--
+        tar -cvzf toCompress.tar.gz toCompress: Comprime de la misma manera, pero el output va a ser un archivo con extesion gz.--
+        tar -xzvf toCompress.tar.gz: Con este comando descomprimimos un archivo comprimido en gzip. --
+        zip -r toCompressInZip.zip toCompress: Con este comando lo que hacemos es comprimir un archivo en zip.--
+        unzip toCompressInZip.zip: Esto es para descomprimir un zip en la terminal.--</p>
     <h2>clase #18</h2>
     <p></p>
     <h2>clase #19</h2>
