@@ -98,11 +98,40 @@
         zip -r toCompressInZip.zip toCompress: Con este comando lo que hacemos es comprimir un archivo en zip.--
         unzip toCompressInZip.zip: Esto es para descomprimir un zip en la terminal .--</p>
     <h2>clase #18</h2>
-    <p></p>
+    <p> /ps nos muestra los procesos que están corriendo actualmente. Cada proceso tiene un PID. Podemos ver los procesos que estén en el background (por ejemplo, CAT).--
+        /kill PID nos ayuda a terminar procesos fuera de nuestra terminal. --
+        /top PID nos muestra los procesos que están usando más recursos de nuestra computadora. Podemos filtrar los procesos (para ver como, usamos bandera h → help).-- </p>
     <h2>clase #19</h2>
-    <p></p>
+    <p>
+        1. `cat > mi_nota.txt`: Crea un nuevo archivo de texto llamado mi_nota.txt y permite escribir contenido en él desde el terminal. Este comando bloquea la terminal hasta que se finalice la escritura del contenido y se presione Ctrl + D. --
+        
+        2. `fg 1`: Trae al primer plano el trabajo número 1 que estaba suspendido o detenido. Permite interactuar con el trabajo en primer plano. --
+        
+        3. `fg %1`: Similar al comando anterior, trae al primer plano el trabajo de fondo con el identificador %1. --
+        
+        4. `cat > mi_nota.txt &`: Crea un nuevo archivo de texto llamado mi_nota.txt y permite escribir contenido en él desde el terminal. El & al final del comando lo ejecuta en segundo plano, lo que permite seguir utilizando la terminal mientras se escribe en el archivo. --
+        
+        5. `bg 1`: Pone en segundo plano el trabajo número 1. Esto es útil si tienes un trabajo suspendido en primer plano y deseas moverlo al segundo plano para que continúe ejecutándose. --</p>
     <h2>clase #20</h2>
-    <p></p>
+    <p>Abrir editor: Cuando escribes vim en el terminal, estás iniciando el editor de texto Vim. Es un editor potente que te permite modificar archivos de texto directamente desde la línea de comandos. --
+
+        Añadir o abrir archivos: Si escribes vim file.ext, estás abriendo el archivo file.ext en Vim. Si el archivo ya existe, Vim lo abrirá para que puedas editarlo. Si no existe, Vim lo creará y te llevará directamente a un nuevo archivo listo para editar. --
+        
+        Modo normal: Cuando presionas la tecla Esc en Vim, estás saliendo de cualquier modo de edición o comando y entrando en el modo normal. En este modo, puedes navegar por el archivo, copiar y pegar texto, realizar búsquedas y ejecutar comandos. --
+        
+        Modo inserción: Si presionas i en Vim, entrarás en el modo de inserción. Esto significa que puedes comenzar a escribir y editar el texto en el lugar donde se encuentra el cursor. --
+        
+        Guardar archivo: Cuando estás en el modo normal y escribes :w y presionas Enter, Vim guarda los cambios que has realizado en el archivo, pero no sale del editor. --
+        
+        Guardar archivo y salir: Si escribes :wq en el modo normal y presionas Enter, Vim guarda los cambios y luego sale del editor. --
+        
+        Para salir: Si escribes :q y presionas Enter en el modo normal, Vim intentará salir del editor. Si hay cambios sin guardar, te pedirá que los guardes o que los descartes antes de salir. --
+        
+        Para forzar salida: Si escribes :wq! y presionas Enter en el modo normal, Vim guarda los cambios y sale del editor incluso si hay advertencias sobre cambios no guardados. --
+        
+        Buscar palabras clave: Al escribir /key-word y presionar Enter en el modo normal, Vim buscará la palabra clave key-word en el archivo y te llevará a la primera instancia que encuentre. --
+        
+        Eliminar línea de código: Si presionas dd en el modo normal, Vim eliminará la línea de texto sobre la que se encuentra el cursor. Esto puede ser útil si deseas eliminar una línea de código o texto no deseado. --</p>
     <h2>clase #21</h2>
     <p></p>
     <h2>clase #22</h2>
